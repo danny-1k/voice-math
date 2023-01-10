@@ -1,0 +1,76 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "An Alexa skill for solving simple math problems",
+          "examplePhrases": [
+            "Alexa open voice math",
+            "calculate two hundred and forty two plus three hundred thousand and three",
+            "what is four thousand two hundred and thirty three divided by twenty two"
+          ],
+          "keywords": [
+            "math",
+            "fast-calculation",
+            "calculation",
+            "simple-math",
+            "calculation-utility"
+          ],
+          "name": "Voice Math",
+          "description": "Voice math is to help you calculate all that little math you\u0027d usually do in your head.\nThink about calculating the expenditure from a shopping spree, you can just ask Alexa to do it. \nIsn\u0027t that cool.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "updatesDescription": "Fixed bug",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "The skill uses a python library called text2num - https://pypi.org/project/text2num/",
+      "category": "CALCULATORS",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:996589959934:function:c1bc3956-98b8-4e2d-aeda-23a753be6303:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:996589959934:function:c1bc3956-98b8-4e2d-aeda-23a753be6303:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:996589959934:function:c1bc3956-98b8-4e2d-aeda-23a753be6303:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:996589959934:function:c1bc3956-98b8-4e2d-aeda-23a753be6303:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}
